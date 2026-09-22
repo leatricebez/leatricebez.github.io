@@ -86,6 +86,7 @@ button{
 
 .status{text-align:center;font-size:12px;color:var(--cinza);margin-top:14px;min-height:16px}
 .rodape{text-align:center;font-size:11px;color:var(--cinza);margin-top:26px;line-height:1.6}
+.rodape .identificacao{margin-top:10px;font-size:10px;color:var(--cinza);opacity:.85}
 .dica{
   background:#fff;border:1px dashed var(--linha);border-radius:10px;
   padding:12px 14px;font-size:12.5px;color:#4A6B84;margin-top:16px;line-height:1.5;
@@ -184,6 +185,7 @@ canvas{display:none}
   <div class="rodape">
     Tudo o que você preenche fica salvo <strong>só no seu celular</strong>.<br>
     Nada é enviado para ninguém.
+    <div class="identificacao">Leatrice Bez · MDB · CNPJ 68.462.336/0001-00</div>
   </div>
 
 </div>
@@ -275,7 +277,7 @@ canvas{display:none}
     var itens = preenchidos();
     var W = 1080;
     var alturaItens = itens.length ? itens.length * 132 : 120;
-    var H = Math.max(1350, 600 + alturaItens + 230);
+    var H = Math.max(1350, 600 + alturaItens + 250);
     cv.width = W; cv.height = H;
 
     c.fillStyle = '#fff'; c.fillRect(0, 0, W, H);
@@ -364,18 +366,22 @@ canvas{display:none}
     }
 
     /* rodapé */
-    var fy = H - 190;
+    var fy = H - 210;
     c.fillStyle = NAVY; c.fillRect(0, fy, W, H - fy);
     c.fillStyle = LARANJA; c.fillRect(0, fy, W, 8);
 
     c.textAlign = 'center';
     c.fillStyle = '#fff';
     c.font = '700 44px system-ui,Arial';
-    c.fillText('LEATRICE BEZ · 15104', W / 2, fy + 82);
+    c.fillText('LEATRICE BEZ · 15104', W / 2, fy + 76);
 
     c.fillStyle = '#9FC6E0';
     c.font = '400 27px system-ui,Arial';
-    c.fillText('Deputada Estadual · MDB · Santa Catarina', W / 2, fy + 130);
+    c.fillText('Deputada Estadual · MDB · Santa Catarina', W / 2, fy + 120);
+
+    c.fillStyle = '#7FA0B8';
+    c.font = '400 20px system-ui,Arial';
+    c.fillText('CNPJ 68.462.336/0001-00', W / 2, fy + 158);
 
     return cv;
   }
