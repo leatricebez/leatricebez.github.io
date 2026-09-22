@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#073F67">
+<title>Meu Voto 2026 · Leatrice Bez 15104</title>
+<meta name="description" content="Monte a sua cola de votação para 4 de outubro. Leatrice Bez, deputada estadual, 15104.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23073F67'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='26' font-weight='bold' fill='%23F58220' text-anchor='middle'%3E15%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --laranja:#F58220; --azul:#0878B9; --navy:#073F67;
+  --tint:#EAF5FB; --linha:#DCE7EC; --creme:#FFF1E5; --cinza:#8AA2B0;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+  margin:0;background:var(--tint);color:var(--navy);
+  font-family:system-ui,"Segoe UI",Arial,sans-serif;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.wrap{max-width:520px;margin:0 auto;padding:0 16px 40px}
+
+header{
+  background:var(--navy);color:#fff;padding:22px 16px 18px;
+  border-bottom:5px solid var(--laranja);text-align:center;
+}
+header .eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#9FC6E0}
+header h1{margin:6px 0 2px;font-size:22px;letter-spacing:.02em}
+header .sub{font-size:13px;color:#C8DCEB}
+
+.card{
+  background:#fff;border:1px solid var(--linha);border-radius:12px;
+  padding:16px;margin-top:16px;
+}
+.intro{font-size:14px;line-height:1.5;color:#3C5C74;margin:14px 2px 0}
+
+.fixo{
+  background:var(--creme);border:2px solid var(--laranja);border-radius:12px;
+  padding:16px;margin-top:16px;position:relative;
+}
+.fixo .tag{
+  position:absolute;top:-10px;left:14px;background:var(--laranja);color:#fff;
+  font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 9px;border-radius:20px;
+}
+.fixo .cargo{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#A85F13}
+.fixo .nome{font-size:21px;font-weight:700;margin:3px 0 10px}
+.numfixo{
+  display:flex;gap:6px;justify-content:flex-start;
+}
+.numfixo span{
+  width:42px;height:54px;border-radius:8px;background:var(--navy);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:27px;font-weight:700;
+}
+.fixo .aviso{font-size:12px;color:#A85F13;margin-top:10px;display:flex;gap:6px;align-items:center}
+
+.bloco{border-top:1px solid var(--linha);padding-top:16px;margin-top:16px}
+.bloco:first-of-type{border-top:0;padding-top:0;margin-top:0}
+label.cargo{
+  display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--azul);font-weight:700;margin-bottom:8px;
+}
+label.cargo .digitos{color:var(--cinza);font-weight:400;letter-spacing:0;text-transform:none}
+.linha{display:flex;gap:10px}
+input{
+  font-family:inherit;border:1.5px solid var(--linha);border-radius:9px;
+  padding:12px;font-size:16px;color:var(--navy);background:#fff;width:100%;
+}
+input:focus{outline:0;border-color:var(--azul);box-shadow:0 0 0 3px rgba(8,120,185,.14)}
+input.num{
+  font-weight:700;letter-spacing:.14em;text-align:center;flex:0 0 118px;
+  font-variant-numeric:tabular-nums;
+}
+input.nm{flex:1;min-width:0}
+input::placeholder{color:#B9C9D4;font-weight:400;letter-spacing:0}
+
+.acoes{display:flex;flex-direction:column;gap:10px;margin-top:20px}
+button{
+  font-family:inherit;font-size:15px;font-weight:700;border:0;border-radius:10px;
+  padding:15px;cursor:pointer;
+}
+.b1{background:var(--laranja);color:#fff}
+.b2{background:#fff;color:var(--navy);border:1.5px solid var(--linha)}
+.b3{background:transparent;color:var(--cinza);font-weight:400;font-size:13px;padding:8px}
+
+.status{text-align:center;font-size:12px;color:var(--cinza);margin-top:14px;min-height:16px}
+.rodape{text-align:center;font-size:11px;color:var(--cinza);margin-top:26px;line-height:1.6}
+.dica{
+  background:#fff;border:1px dashed var(--linha);border-radius:10px;
+  padding:12px 14px;font-size:12.5px;color:#4A6B84;margin-top:16px;line-height:1.5;
+}
+canvas{display:none}
+
+@media (max-width:360px){
+  input.num{flex:0 0 100px}
+  .numfixo span{width:37px;height:48px;font-size:23px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Eleições 2026 · 4 de outubro</div>
+  <h1>Minha cola de votação</h1>
+  <div class="sub">Monte o seu voto e leve no celular</div>
+</header>
+
+<div class="wrap">
+
+  <p class="intro">
+    Os campos estão na <strong>mesma ordem da urna</strong>. Preencha o que já decidiu —
+    o que ficar em branco não aparece no card.
+  </p>
+
+  <!-- BLOCO FIXO -->
+  <div class="fixo">
+    <div class="tag">Meu voto já está definido</div>
+    <div class="cargo">Deputada Estadual</div>
+    <div class="nome">Leatrice Bez</div>
+    <div class="numfixo" aria-label="Número 15104">
+      <span>1</span><span>5</span><span>1</span><span>0</span><span>4</span>
+    </div>
+    <div class="aviso">🔒 Este número é fixo e não pode ser alterado.</div>
+  </div>
+
+  <!-- DEMAIS CARGOS -->
+  <div class="card">
+    <div class="bloco">
+      <label class="cargo" for="df">Deputado Federal <span class="digitos">— 4 dígitos</span></label>
+      <div class="linha">
+        <input class="num" id="df" inputmode="numeric" maxlength="4" placeholder="0000" aria-label="Número do deputado federal">
+        <input class="nm"  id="df_n" maxlength="40" placeholder="Nome (opcional)" aria-label="Nome do deputado federal">
+      </div>
+    </div>
+
+    <div class="bloco">
+      <label class="cargo" for="s1">1º Senador <span class="digitos">— 3 dígitos</span></label>
+      <div class="linha">
+        <input class="num" id="s1" inputmode="numeric" maxlength="3" placeholder="000" aria-label="Número do primeiro senador">
+        <input class="nm"  id="s1_n" maxlength="40" placeholder="Nome (opcional)" aria-label="Nome do primeiro senador">
+      </div>
+    </div>
+
+    <div class="bloco">
+      <label class="cargo" for="s2">2º Senador <span class="digitos">— 3 dígitos</span></label>
+      <div class="linha">
+        <input class="num" id="s2" inputmode="numeric" maxlength="3" placeholder="000" aria-label="Número do segundo senador">
+        <input class="nm"  id="s2_n" maxlength="40" placeholder="Nome (opcional)" aria-label="Nome do segundo senador">
+      </div>
+    </div>
+
+    <div class="bloco">
+      <label class="cargo" for="gov">Governador <span class="digitos">— 2 dígitos</span></label>
+      <div class="linha">
+        <input class="num" id="gov" inputmode="numeric" maxlength="2" placeholder="00" aria-label="Número do governador">
+        <input class="nm"  id="gov_n" maxlength="40" placeholder="Nome (opcional)" aria-label="Nome do governador">
+      </div>
+    </div>
+
+    <div class="bloco">
+      <label class="cargo" for="pres">Presidente <span class="digitos">— 2 dígitos</span></label>
+      <div class="linha">
+        <input class="num" id="pres" inputmode="numeric" maxlength="2" placeholder="00" aria-label="Número do presidente">
+        <input class="nm"  id="pres_n" maxlength="40" placeholder="Nome (opcional)" aria-label="Nome do presidente">
+      </div>
+    </div>
+  </div>
+
+  <div class="acoes">
+    <button class="b1" id="compartilhar">Gerar imagem e compartilhar</button>
+    <button class="b2" id="baixar">Só baixar a imagem</button>
+    <button class="b3" id="limpar">Limpar o que eu preenchi</button>
+  </div>
+
+  <div class="status" id="status"></div>
+
+  <div class="dica">
+    <strong>Deixe na tela de início do celular:</strong> no Chrome, toque nos três pontinhos
+    e escolha <em>Adicionar à tela inicial</em>. No iPhone, toque no ícone de compartilhar
+    e escolha <em>Adicionar à Tela de Início</em>. Aí abre como aplicativo, sem precisar do link.
+  </div>
+
+  <div class="rodape">
+    Tudo o que você preenche fica salvo <strong>só no seu celular</strong>.<br>
+    Nada é enviado para ninguém.
+  </div>
+
+</div>
+
+<canvas id="tela" width="1080" height="1350"></canvas>
+
+<script>
+(function () {
+  'use strict';
+
+  var CHAVE = 'santinho_leatrice_2026';
+  var CAMPOS = ['df','df_n','s1','s1_n','s2','s2_n','gov','gov_n','pres','pres_n'];
+
+  var el = function (id) { return document.getElementById(id); };
+  var status = el('status');
+
+  function aviso(txt, ms) {
+    status.textContent = txt;
+    if (ms) setTimeout(function () {
+      if (status.textContent === txt) status.textContent = '';
+    }, ms);
+  }
+
+  /* ---------- só números nos campos numéricos ---------- */
+  ['df','s1','s2','gov','pres'].forEach(function (id) {
+    el(id).addEventListener('input', function () {
+      this.value = this.value.replace(/\D/g, '');
+    });
+  });
+
+  /* ---------- salvar / carregar ---------- */
+  var timer;
+  function salvar() {
+    var d = {};
+    CAMPOS.forEach(function (c) { d[c] = el(c).value.trim(); });
+    try {
+      localStorage.setItem(CHAVE, JSON.stringify(d));
+      aviso('Salvo no seu celular', 2500);
+    } catch (e) { /* modo anônimo: segue sem salvar */ }
+  }
+  function carregar() {
+    try {
+      var d = JSON.parse(localStorage.getItem(CHAVE) || '{}');
+      CAMPOS.forEach(function (c) { if (d[c]) el(c).value = d[c]; });
+    } catch (e) { /* ignora */ }
+  }
+  CAMPOS.forEach(function (c) {
+    el(c).addEventListener('input', function () {
+      clearTimeout(timer); timer = setTimeout(salvar, 500);
+    });
+  });
+  carregar();
+
+  el('limpar').addEventListener('click', function () {
+    if (!confirm('Apagar tudo o que você preencheu? O voto na Leatrice continua.')) return;
+    CAMPOS.forEach(function (c) { el(c).value = ''; });
+    try { localStorage.removeItem(CHAVE); } catch (e) {}
+    aviso('Campos limpos', 2500);
+  });
+
+  /* ---------- desenho do card ---------- */
+  var LARANJA = '#F58220', AZUL = '#0878B9', NAVY = '#073F67',
+      CREME = '#FFF1E5', LINHA = '#DCE7EC', CINZA = '#8AA2B0';
+
+  function arred(c, x, y, w, h, r) {
+    c.beginPath();
+    c.moveTo(x + r, y);
+    c.arcTo(x + w, y, x + w, y + h, r);
+    c.arcTo(x + w, y + h, x, y + h, r);
+    c.arcTo(x, y + h, x, y, r);
+    c.arcTo(x, y, x + w, y, r);
+    c.closePath();
+  }
+
+  function preenchidos() {
+    return [
+      { cargo: 'Deputado Federal', num: el('df').value,   nome: el('df_n').value },
+      { cargo: '1º Senador',       num: el('s1').value,   nome: el('s1_n').value },
+      { cargo: '2º Senador',       num: el('s2').value,   nome: el('s2_n').value },
+      { cargo: 'Governador',       num: el('gov').value,  nome: el('gov_n').value },
+      { cargo: 'Presidente',       num: el('pres').value, nome: el('pres_n').value }
+    ].filter(function (i) { return i.num.trim() !== ''; });
+  }
+
+  function desenhar() {
+    var cv = el('tela'), c = cv.getContext('2d');
+
+    /* a altura cresce conforme o que foi preenchido, senão o rodapé sai da imagem */
+    var itens = preenchidos();
+    var W = 1080;
+    var alturaItens = itens.length ? itens.length * 132 : 120;
+    var H = Math.max(1350, 600 + alturaItens + 230);
+    cv.width = W; cv.height = H;
+
+    c.fillStyle = '#fff'; c.fillRect(0, 0, W, H);
+
+    /* topo */
+    c.fillStyle = NAVY; c.fillRect(0, 0, W, 250);
+    c.fillStyle = LARANJA; c.fillRect(0, 250, W, 10);
+
+    c.textAlign = 'center';
+    c.fillStyle = '#9FC6E0';
+    c.font = '600 26px system-ui,Arial';
+    c.fillText('ELEIÇÕES 2026 · 4 DE OUTUBRO', W / 2, 84);
+
+    c.fillStyle = '#fff';
+    c.font = '700 60px system-ui,Arial';
+    c.fillText('MINHA COLA DE VOTAÇÃO', W / 2, 152);
+
+    c.fillStyle = '#C8DCEB';
+    c.font = '400 28px system-ui,Arial';
+    c.fillText('na ordem em que aparece na urna', W / 2, 200);
+
+    /* bloco Leatrice */
+    var y = 300;
+    c.fillStyle = CREME; arred(c, 60, y, W - 120, 250, 20); c.fill();
+    c.strokeStyle = LARANJA; c.lineWidth = 5; c.stroke();
+
+    c.textAlign = 'left';
+    c.fillStyle = '#A85F13';
+    c.font = '700 24px system-ui,Arial';
+    c.fillText('DEPUTADA ESTADUAL', 105, y + 60);
+
+    c.fillStyle = NAVY;
+    c.font = '700 54px system-ui,Arial';
+    c.fillText('Leatrice Bez', 105, y + 125);
+
+    var dig = '15104', bx = 105, bw = 68, bh = 82, gap = 11;
+    for (var i = 0; i < dig.length; i++) {
+      c.fillStyle = NAVY;
+      arred(c, bx + i * (bw + gap), y + 148, bw, bh, 12); c.fill();
+      c.fillStyle = '#fff';
+      c.font = '700 48px system-ui,Arial';
+      c.textAlign = 'center';
+      c.fillText(dig[i], bx + i * (bw + gap) + bw / 2, y + 148 + 58);
+      c.textAlign = 'left';
+    }
+
+    /* demais cargos */
+    y += 300;
+
+    if (itens.length === 0) {
+      c.fillStyle = CINZA;
+      c.font = '400 30px system-ui,Arial';
+      c.textAlign = 'center';
+      c.fillText('Preencha os outros cargos no aplicativo', W / 2, y + 60);
+      y += 120;
+    } else {
+      itens.forEach(function (it) {
+        c.strokeStyle = LINHA; c.lineWidth = 2;
+        c.beginPath(); c.moveTo(60, y); c.lineTo(W - 60, y); c.stroke();
+
+        c.textAlign = 'left';
+        c.fillStyle = AZUL;
+        c.font = '700 23px system-ui,Arial';
+        c.fillText(it.cargo.toUpperCase(), 72, y + 46);
+
+        c.fillStyle = NAVY;
+        c.font = '700 50px system-ui,Arial';
+        c.fillText(it.num, 72, y + 104);
+
+        if (it.nome.trim()) {
+          c.fillStyle = '#4A6B84';
+          c.font = '400 32px system-ui,Arial';
+          var nome = it.nome.trim();
+          if (c.measureText(nome).width > W - 420) {
+            while (c.measureText(nome + '…').width > W - 420 && nome.length > 3) {
+              nome = nome.slice(0, -1);
+            }
+            nome += '…';
+          }
+          c.textAlign = 'right';
+          c.fillText(nome, W - 72, y + 100);
+          c.textAlign = 'left';
+        }
+        y += 132;
+      });
+    }
+
+    /* rodapé */
+    var fy = H - 190;
+    c.fillStyle = NAVY; c.fillRect(0, fy, W, H - fy);
+    c.fillStyle = LARANJA; c.fillRect(0, fy, W, 8);
+
+    c.textAlign = 'center';
+    c.fillStyle = '#fff';
+    c.font = '700 44px system-ui,Arial';
+    c.fillText('LEATRICE BEZ · 15104', W / 2, fy + 82);
+
+    c.fillStyle = '#9FC6E0';
+    c.font = '400 27px system-ui,Arial';
+    c.fillText('Deputada Estadual · MDB · Santa Catarina', W / 2, fy + 130);
+
+    return cv;
+  }
+
+  function paraBlob(cb) {
+    desenhar().toBlob(function (b) { cb(b); }, 'image/png');
+  }
+
+  el('baixar').addEventListener('click', function () {
+    aviso('Gerando imagem…');
+    paraBlob(function (blob) {
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = 'meu-voto-2026-leatrice-15104.png';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+      aviso('Imagem salva', 3500);
+    });
+  });
+
+  el('compartilhar').addEventListener('click', function () {
+    aviso('Gerando imagem…');
+    paraBlob(function (blob) {
+      var arq = new File([blob], 'meu-voto-2026-leatrice-15104.png', { type: 'image/png' });
+      if (navigator.canShare && navigator.canShare({ files: [arq] })) {
+        navigator.share({
+          files: [arq],
+          title: 'Minha cola de votação 2026',
+          text: 'Meu voto para deputada estadual: Leatrice Bez, 15104.'
+        }).then(function () {
+          aviso('');
+        }).catch(function () {
+          aviso('');
+        });
+      } else {
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url; a.download = 'meu-voto-2026-leatrice-15104.png';
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+        aviso('Seu navegador não abre o compartilhamento direto. A imagem foi baixada — mande pelo WhatsApp.', 7000);
+      }
+    });
+  });
+
+  /* ---------- vira app na tela de início ---------- */
+  try {
+    var icone = "data:image/svg+xml;base64," + btoa(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">' +
+      '<rect width="512" height="512" rx="110" fill="#073F67"/>' +
+      '<text x="256" y="290" font-family="Arial" font-size="150" font-weight="bold" ' +
+      'fill="#F58220" text-anchor="middle">15104</text></svg>'
+    );
+    var manifesto = {
+      name: 'Meu Voto 2026 · Leatrice Bez',
+      short_name: 'Meu Voto 2026',
+      start_url: '.',
+      display: 'standalone',
+      background_color: '#EAF5FB',
+      theme_color: '#073F67',
+      icons: [{ src: icone, sizes: '512x512', type: 'image/svg+xml', purpose: 'any' }]
+    };
+    var lk = document.createElement('link');
+    lk.rel = 'manifest';
+    lk.href = URL.createObjectURL(new Blob([JSON.stringify(manifesto)], { type: 'application/json' }));
+    document.head.appendChild(lk);
+  } catch (e) { /* sem manifesto, continua funcionando */ }
+})();
+</script>
+</body>
+</html>
